@@ -25,7 +25,7 @@ Für das Clustering nutzen wir sieben Merkmale:
 | `PURCHASES_FREQUENCY` | Einkaufshäufigkeit |
 | `PRC_FULL_PAYMENT` | Anteil vollständiger Zahlungen |
 
-Eine Beschreibung aller 18 Spalten befindet sich im **Data Dictionary** des Notebooks.
+Eine Beschreibung aller 18 Spalten befindet sich im **Data Dictionary** des Notebooks
 
 ## Vorgehensweise
 
