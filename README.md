@@ -13,8 +13,6 @@ In diesem Data-Science-Projekt werden **8.950 Kreditkartenkunden** mithilfe von 
 
 ## Daten und Merkmale
 
-Die Daten stammen aus dem öffentlich verfügbaren [Credit Card Dataset for Clustering auf Kaggle](https://www.kaggle.com/datasets/arjunbhasin2013/ccdata). Die Spalte `CUST_ID` dient nur zur Identifikation der Kunden und wird nicht als Modellmerkmal verwendet.
-
 Für das Clustering nutzen wir sieben Merkmale:
 
 | Merkmal | Bedeutung |
@@ -53,33 +51,6 @@ Im dokumentierten Notebook-Durchlauf wurden **fünf Cluster** gebildet. Der **Si
 
 **Einordnung:** Die Cluster sind interpretierbar, aber nicht besonders deutlich voneinander getrennt. Da K = 4 nahezu denselben Silhouette Score erreicht, ist K = 5 keine eindeutig optimale Lösung. Die Clusternummern stellen keine Rangfolge dar.
 
-## Projektdateien
-
-```text
-Kreditkarten_Kundensegmentierung/
-├── Kreditkarten_Kundensegmentierung.ipynb
-├── CC GENERAL.csv
-├── README.md
-└── credit_card_segments.csv      # wird vom Notebook erzeugt
-```
-
-## Lokal ausführen
-
-**Voraussetzung:** Python und Jupyter Notebook oder VS Code mit Notebook-Unterstützung.
-
-Benötigte Bibliotheken bei Bedarf installieren:
-
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn notebook
-```
-
-Das Notebook und die Datei `CC GENERAL.csv` im **gleichen Ordner** speichern. Anschließend das Notebook öffnen und alle Zellen der Reihe nach ausführen.
-
-```python
-df = pd.read_csv('CC GENERAL.csv')
-```
-
-Es wird **kein Kaggle-Input-Pfad** und keine API benötigt. Die Ergebnisdatei `credit_card_segments.csv` wird im aktuellen Arbeitsverzeichnis erstellt.
 
 ## Grenzen des Projekts
 
@@ -91,4 +62,3 @@ Dieses Projekt zeigt eine explorative Kundensegmentierung anhand eines Beispield
 - [scikit-learn: KMeans](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
 - [scikit-learn: Silhouette Score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html)
 
-**Hinweis zur Veröffentlichung:** Vor dem öffentlichen Hochladen der Original-CSV oder exportierter Datensätze die Nutzungs- und Weitergaberechte prüfen. Falls unklar, nur das Notebook, die README und den Link zur Datenquelle veröffentlichen.
